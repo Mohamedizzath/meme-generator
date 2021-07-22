@@ -2,8 +2,7 @@ import { CardGroup, Container } from 'react-bootstrap';
 import { Card, Button } from 'react-bootstrap';
 import './App.css';
 import "bootstrap/dist/css/bootstrap.min.css";
-import image1 from './images/meme1.jpg'
-import image2 from './images/meme2.jpg'
+
 
 function App() {
 
