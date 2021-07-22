@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@700&display=swap');
+
 .App {
   text-align: center;
 }
@@ -35,4 +37,27 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+
+.fonts{
+	font-family: 'Yanone Kaffeesatz', sans-serif !important;
+	color: #e9eef3 !important;
+	font-weight: bolder !important;
+	text-decoration: none !important;
+}
+
+.card-background{
+	background-color: #D96523 !important;
+}
+
+.button-rework{
+	background-color: #e9eef3 !important;
+	font-family: 'Yanone Kaffeesatz', sans-serif !important;
+	color: #D96523 !important;
+	min-width: 95px !important;
+	font-weight: bolder !important;
+	font-size: 24px !important;
+	text-decoration: none !important;
+	padding: 5px !important;
 }

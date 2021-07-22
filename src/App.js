@@ -2,22 +2,28 @@ import { CardGroup, Container } from 'react-bootstrap';
 import { Card, Button } from 'react-bootstrap';
 import './App.css';
 import "bootstrap/dist/css/bootstrap.min.css";
+import image1 from './images/meme1.jpg'
+import image2 from './images/meme2.jpg'
 
 function App() {
 
-  const listOfMemes = [{name: 'izzath', likes : 0}, {name: 'kamal', likes : 0}, {name: 'nimal', likes : 0}, {name: 'sunil', likes : 0}, {name: 'perera', likes : 0}];
+  const listOfMemes = [
+    {name: 'Sachin', url: '/images/meme1.jpg', comment: ""}, 
+    {name: 'Malindu', url: '/images/meme2.jpg', comment: ""}, 
+    {name: 'Nipun', url: '/images/meme3.jpg', comment: ""}, 
+    {name: 'Sandul', url: '/images/meme4.jpg', comment: ""}, 
+    {name: 'Izzath', url: '/images/meme5.jpg', comment: ""}];
 
   const listMeme = listOfMemes.map(meme => 
-    <Card style={{ width: '18rem' }}>
-      <Card.Img variant="top" src="holder.js/100px180" />
+    <Card style={{ width: '18rem', margin: '10px', marginTop: '15px'}} className="fonts card-background">
+      <Card.Img variant="top" src={meme.url} thumbnail/>
       <Card.Body>
-        <Card.Title>{meme.name}</Card.Title>
+        <Card.Title><h3>{meme.name}</h3></Card.Title>
         <Card.Text>
-          Some quick example text to build on the card title and make up the bulk of
-          the card's content.
+        
         </Card.Text>
-        <Button variant="primary">Go somewhere</Button>
       </Card.Body>
+      
     </Card>
   );
 
